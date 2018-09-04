@@ -2,7 +2,8 @@ var myArray = []
 
 var appState = {
   state: false,
-  characters: myArray
+  characters: myArray,
+  currentCharacter: 0
 }
 
 function createCharacter(string) {
@@ -21,6 +22,9 @@ createCharacter('grumpy wizards make toxic brew for the evil queen and jack')
 function renderCharacter(character) {
   var $letter = document.createElement('span')
   $letter.textContent = character.letter
+  if ($letter.textContent === myArray[appState['currentCharacter']]['letter']){
+    $letter.classList.toggle('currentCharacter')
+  }
   return $letter
 }
 

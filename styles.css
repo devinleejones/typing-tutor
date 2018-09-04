@@ -19,3 +19,8 @@
   word-spacing: 8px;
   filter: drop-shadow(0 0 20px);
 }
+
+.currentCharacter {
+  color: rgb(121, 220, 242);
+  text-decoration: underline rgb(121, 220, 242);
+}
