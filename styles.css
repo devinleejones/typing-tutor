@@ -1,0 +1,21 @@
+* {
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+ h1 {
+  font-size: 3rem;
+  word-spacing: 10px;
+}
+ div {
+  margin-top: 6rem;
+  border: solid;
+  border-width: 4px;
+  border-radius: 4rem;
+  padding: 1.25rem;
+  word-spacing: 8px;
+  filter: drop-shadow(0 0 20px);
+}
