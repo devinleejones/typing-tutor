@@ -18,3 +18,13 @@ function renderCharacter(character) {
   $letter.textContent = character.letter
   return $letter
 }
+
+function renderAllCharacters(characters) {
+  var $mySentence = document.createElement('div')
+  for (var i = 0; i < characters.length; i++){
+    $mySentence.appendChild(renderCharacter(characters[i]))
+  }
+  return $mySentence
+}
+
+document.body.appendChild(renderAllCharacters(myArray))
